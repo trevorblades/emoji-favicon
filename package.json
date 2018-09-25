@@ -1,21 +1,24 @@
 {
   "name": "emoji-favicon-webpack-plugin",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "pretest": "eslint ./",
-    "test": "exit",
-    "start": "node index.js"
-  },
+  "version": "0.0.0",
+  "description": "Let webpack generate an emoji favicon for you",
   "author": "Trevor Blades <tdblades@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "pretest": "eslint lib src webpack.config.js",
+    "test": "exit",
+    "start": "webpack"
+  },
   "dependencies": {
     "favicon-emoji": "^2.3.0",
     "to-ico": "^1.1.5"
   },
   "devDependencies": {
     "@trevorblades/eslint-config": "^6.17.0",
-    "eslint": "^5.6.0"
+    "eslint": "^5.6.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1"
   }
 }
