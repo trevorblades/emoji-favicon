@@ -1,5 +1,5 @@
-const render = require('favicon-emoji/lib/render');
 const fs = require('fs');
+const render = require('favicon-emoji/lib/render');
 const toIco = require('to-ico');
 
 async function generate() {
