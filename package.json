@@ -6,13 +6,13 @@
   "scripts": {
     "pretest": "eslint ./",
     "test": "exit",
-    "start": "node -r esm index.js"
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Trevor Blades <tdblades@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "esm": "^3.0.84",
-    "favicon-emoji": "^2.3.0"
+    "favicon-emoji": "^2.3.0",
+    "to-ico": "^1.1.5"
   },
   "devDependencies": {
     "@trevorblades/eslint-config": "^6.17.0",
