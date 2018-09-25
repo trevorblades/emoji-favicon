@@ -3,7 +3,17 @@
   "version": "0.0.3",
   "description": "Let webpack generate an emoji favicon for you",
   "author": "Trevor Blades <tdblades@gmail.com>",
+  "repository": "trevorblades/emoji-favicon-webpack-plugin",
   "license": "MIT",
+  "keywords": [
+    "emoji",
+    "favicon",
+    "webpack",
+    "plugin",
+    "webapp",
+    "favicons",
+    "html"
+  ],
   "main": "lib/index.js",
   "scripts": {
     "pretest": "eslint lib src webpack.config.js",
