@@ -25,3 +25,13 @@ module.exports = {
   ]
 };
 ```
+
+## Caveats
+
+MacOS has a pretty awesome and extensive library of emojis built into its [Apple Color Emoji](https://en.wikipedia.org/wiki/Apple_Color_Emoji) typeface, but other operating systems aren't so lucky. If you normally develop on a Mac, you will see different results when you build your app on a Linux or Windows machine.
+
+In order to get consistent results between development and production, you should make sure that you use the same operating system for building in each environment. For example, if you're using Travis CI to build your app, you must specify `osx` as your `os` option in your build config. You may read more about using OS X in Travis [here](https://docs.travis-ci.com/user/reference/osx/).
+
+## Examples
+
+[Transform CSS](https://transform-css.trevorblades.com)
