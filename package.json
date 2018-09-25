@@ -1,0 +1,21 @@
+{
+  "name": "emoji-favicon-webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint ./",
+    "test": "exit",
+    "start": "node -r esm index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.0.84",
+    "favicon-emoji": "^2.3.0"
+  },
+  "devDependencies": {
+    "@trevorblades/eslint-config": "^6.17.0",
+    "eslint": "^5.6.0"
+  }
+}
