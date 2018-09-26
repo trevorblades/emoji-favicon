@@ -14,6 +14,11 @@ compiler.outputFileSystem = fs;
 
 test('generates a favicon and injects it into the HTML', done =>
   compiler.run((err, stats) => {
+    if (err) {
+      done.fail();
+      return;
+    }
+
     const {outputPath, assets} = stats.toJson();
     const files = assets.map(asset => asset.name);
     expect(files).toContain('favicon.ico');
