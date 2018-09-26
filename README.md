@@ -1,5 +1,7 @@
 # Emoji Favicon Webpack Plugin
 
+[![Build Status](https://travis-ci.com/trevorblades/emoji-favicon-webpack-plugin.svg?branch=master)](https://travis-ci.com/trevorblades/emoji-favicon-webpack-plugin)
+
 Leverages [favicon-emoji](https://github.com/albinekb/favicon-emoji) to generate an emoji favicon for your webapp
 
 ## Installation
