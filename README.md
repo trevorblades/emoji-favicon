@@ -29,7 +29,9 @@ module.exports = {
 If you're using [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin), the HTML tags necessary to include your favicon will automatically be added to the `<head>` of your document.
 
 ```html
-<link rel="shortcut icon" href="favicon.ico">
+  ...
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
 ```
 
 ## Caveats
