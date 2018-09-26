@@ -1,7 +1,6 @@
 const render = require('favicon-emoji/lib/render');
 const toIco = require('to-ico');
 
-const filename = 'favicon.ico';
 class EmojiFaviconPlugin {
   constructor(emoji) {
     this.emoji = emoji;
@@ -14,7 +13,7 @@ class EmojiFaviconPlugin {
         render(this.emoji, [16, 32, 48])
           .then(toIco)
           .then(ico => {
-            compilation.assets[filename] = {
+            compilation.assets['favicon.ico'] = {
               source: () => ico,
               size: () => ico.length
             };
@@ -26,8 +25,7 @@ class EmojiFaviconPlugin {
                   const publicPath = compilation.outputOptions.publicPath || '';
                   htmlPluginData.html = htmlPluginData.html.replace(
                     /(<\/head>)/i,
-                    `<link rel="shortcut icon" href="${publicPath +
-                      filename}">$&`
+                    `<link rel="shortcut icon" href="${publicPath}favicon.ico">$&`
                   );
 
                   callback(null, htmlPluginData);
