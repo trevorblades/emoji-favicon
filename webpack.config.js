@@ -3,11 +3,5 @@ const HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './index',
-  plugins: [
-    new EmojiFaviconPlugin({
-      emoji: 'carrot',
-      useSystem: false
-    }),
-    new HtmlPlugin()
-  ]
+  plugins: [new EmojiFaviconPlugin('💊'), new HtmlPlugin()]
 };

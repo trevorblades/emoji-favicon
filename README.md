@@ -46,12 +46,28 @@ new EmojiFaviconPlugin({
 })
 ```
 
-> MacOS has a pretty awesome and extensive library of emojis built into its [Apple Color Emoji](https://en.wikipedia.org/wiki/Apple_Color_Emoji) typeface, but other operating systems aren't so lucky. If you normally develop on a Mac, you will see different results when you build your app on a Linux or Windows machine.
+## A note about using system emoji
 
-> In order to get consistent results between development and production, you should make sure that you use the same operating system for building in each environment. For example, if you're using Travis CI to build your app, you must specify `osx` as your `os` option in your build config. You can read more about using OS X in Travis [here](https://docs.travis-ci.com/user/reference/osx/).
+MacOS has a pretty awesome and extensive library of emojis built into its [Apple Color Emoji](https://en.wikipedia.org/wiki/Apple_Color_Emoji) typeface, but other operating systems aren't so lucky. If you normally develop on a Mac, you will see different results when you build your app on a Linux or Windows machine.
 
-## In the wild
+In order to get consistent results between development and production, you should make sure that you use the same operating system for building in each environment. The configuration required to make this happen varies between CI tools, but if you use [TravisCI](https://travis-ci.com), you can add the following to your `.travis.yml` file depending on what OS you're trying to target:
 
-- [Transform CSS](https://transform-css.trevorblades.com)
+### MacOS
 
-- [BATB Stats](https://batbstats.trevorblades.com)
+```yaml
+os: osx
+```
+
+### Ubuntu
+
+```yaml
+# the following is required for favicon-emoji to run on Ubuntu with `useSystem`
+# https://github.com/travis-ci/travis-ci/issues/8836#issuecomment-348227535
+sudo: required
+addons:
+  chrome: stable
+```
+
+## License
+
+[MIT](./LICENSE)
