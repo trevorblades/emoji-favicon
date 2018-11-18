@@ -36,7 +36,7 @@ If you're using [html-webpack-plugin](https://github.com/jantimon/html-webpack-p
 
 ### Options
 
-By default, we use [Twemoji](https://github.com/twitter/twemoji) for consistent results across all operating systems. If you would prefer to use your system's emoji font instead, specify the `useSystem` option in the constructor. You can also choose which icon `sizes` to include!
+By default, we use [Twemoji](https://github.com/twitter/twemoji) for consistent results across all operating systems. If you would prefer to use your system's emoji font instead, specify the `useSystem` option in the constructor.
 
 ```js
 new EmojiFaviconPlugin({
@@ -44,6 +44,12 @@ new EmojiFaviconPlugin({
   useSystem: true,
   sizes: [16] // default is [16, 32, 48]
 })
+```
+
+You can also specify a shortcode instead of an emoji! Check out [this link](https://gist.github.com/rxaviers/7360908) for a complete listing of emojis and their shortcodes.
+
+```js
+new EmojiFaviconPlugin(':bathtub:') // 🛁
 ```
 
 ## A note about using system emoji
