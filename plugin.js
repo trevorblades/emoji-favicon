@@ -1,11 +1,17 @@
 const render = require('favicon-emoji/lib/render');
 const toIco = require('to-ico');
 const emojiUnicode = require('emoji-unicode');
+const toEmoji = require('emoji-name-map');
 const fs = require('pn/fs');
 const svg2png = require('svg2png');
 
+const isShortcode = /^:?[a-z0-9_]+:?$/;
 async function generatePngs(options) {
-  const emoji = typeof options === 'string' ? options : options.emoji;
+  let emoji = typeof options === 'string' ? options : options.emoji;
+  if (isShortcode.test(emoji)) {
+    emoji = toEmoji(emoji);
+  }
+
   const sizes = options.sizes || [72, 48, 32, 16];
   if (options.useSystem) {
     return await render(emoji, sizes);

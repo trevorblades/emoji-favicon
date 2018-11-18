@@ -21,6 +21,7 @@
     "start": "webpack"
   },
   "dependencies": {
+    "emoji-name-map": "^1.2.7",
     "emoji-unicode": "^1.0.9",
     "favicon-emoji": "^2.3.0",
     "pn": "^1.1.0",
