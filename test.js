@@ -1,15 +1,11 @@
 /* eslint-env jest */
-const EmojiFaviconPlugin = require('./plugin');
-const HtmlPlugin = require('html-webpack-plugin');
 const MemoryFileSystem = require('memory-fs');
 const webpack = require('webpack');
 const {JSDOM} = require('jsdom');
+const config = require('./webpack.config.js');
 
 const fs = new MemoryFileSystem();
-const compiler = webpack({
-  entry: './index',
-  plugins: [new EmojiFaviconPlugin('🦑'), new HtmlPlugin()]
-});
+const compiler = webpack(config);
 compiler.outputFileSystem = fs;
 
 test('generates a favicon and injects it into the HTML', done =>
