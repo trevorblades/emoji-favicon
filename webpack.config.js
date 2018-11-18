@@ -5,7 +5,7 @@ module.exports = {
   entry: './index',
   plugins: [
     new EmojiFaviconPlugin({
-      emoji: '⛄️',
+      emoji: 'carrot',
       useSystem: false
     }),
     new HtmlPlugin()
