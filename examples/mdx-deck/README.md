@@ -1,8 +1,10 @@
 # Using an emoji favicon with MDX Deck
 
-![Good news](https://i.imgur.com/REpK0gd.jpg)
+[MDX Deck](https://github.com/jxnblk/mdx-deck) is a great tool for creating slideshows using Markdown and React that are viewed in your web browser. There's only one problem: your slides look amazing, but your browser tab is plain and boring.
 
-If you use [MDX Deck](https://github.com/jxnblk/mdx-deck) to create slide shows, you can use an emoji favicon _really_ easily. MDX Deck uses webpack, so you can configure it using a `webpack.config.js` file at the root of your project.
+![good news](https://i.imgur.com/REpK0gd.jpg)
+
+Since MDX Deck uses webpack, you can add an emoji favicon _really_ easily. It just takes a few lines in a `webpack.config.js` file at the root of your project.
 
 ```shell
 $ npm install --save-dev emoji-favicon-webpack-plugin
