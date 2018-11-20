@@ -1,3 +1,14 @@
 language: node_js
 node_js: 10
 cache: npm
+before_deploy:
+  - cd examples/mdx-deck
+  - npm install
+  - npm run build
+deploy:
+  provider: surge
+  project: dist
+  domain: emoji-favicon.surge.sh
+  skip_cleanup: true
+  on:
+    branch: master
