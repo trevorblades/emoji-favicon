@@ -62,14 +62,6 @@ class EmojiFaviconPlugin {
         }
 
         callback();
-
-        // console.log(pngs);
-
-        // render(this.emoji, [16, 32, 48])
-
-        //   .then(ico => {
-
-        //   });
       }
     );
   }
