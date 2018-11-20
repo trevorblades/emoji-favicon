@@ -7,7 +7,7 @@ before_deploy:
   - npm run build
 deploy:
   provider: surge
-  project: dist
+  project: examples/mdx-deck/dist
   domain: emoji-favicon-mdx-deck.surge.sh
   skip_cleanup: true
   on:
