@@ -8,7 +8,7 @@ before_deploy:
 deploy:
   provider: surge
   project: dist
-  domain: emoji-favicon.surge.sh
+  domain: emoji-favicon-mdx-deck.surge.sh
   skip_cleanup: true
   on:
     branch: master
