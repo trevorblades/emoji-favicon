@@ -1,0 +1,38 @@
+import {Head} from 'mdx-deck';
+
+<Head>
+  <title>I ♥ emoji</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+</Head>
+
+# Use an emoji favicon for your slide deck
+
+---
+
+# It's really easy
+
+---
+
+`npm install --save-dev emoji-favicon-webpack-plugin`
+
+---
+
+```js
+// webpack.config.js
+const EmojiFaviconPlugin = require('emoji-favicon-webpack-plugin');
+
+module.exports = {
+  plugins: [new EmojiFaviconPlugin('🚀')]
+};
+```
+
+---
+
+```mdx
+// deck.mdx
+import {Head} from 'mdx-deck';
+
+<Head>
+  <link rel="shortcut icon" href="favicon.ico" />
+</Head>
+```

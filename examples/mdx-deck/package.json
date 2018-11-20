@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "mdx-deck develop deck.mdx",
+    "build": "mdx-deck build deck.mdx"
+  },
+  "devDependencies": {
+    "emoji-favicon-webpack-plugin": "^1.1.4",
+    "mdx-deck": "^1.7.14"
+  }
+}

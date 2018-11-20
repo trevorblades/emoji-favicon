@@ -74,6 +74,10 @@ addons:
   chrome: stable
 ```
 
+## Examples
+
+[MDX Deck](./examples/mdx-deck)
+
 ## License
 
 [MIT](./LICENSE)
