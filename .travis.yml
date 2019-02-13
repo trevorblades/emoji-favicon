@@ -4,6 +4,7 @@ cache: npm
 before_script:
   - cd packages/emoji-favicon-webpack-plugin
   - npm install
+  - cd ../../
 before_deploy:
   - cd examples/mdx-deck
   - npm install
