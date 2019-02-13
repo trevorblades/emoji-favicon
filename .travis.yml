@@ -1,6 +1,9 @@
 language: node_js
 node_js: 10
 cache: npm
+before_script:
+  - cd packages/emoji-favicon-webpack-plugin
+  - npm install
 before_deploy:
   - cd examples/mdx-deck
   - npm install
