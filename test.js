@@ -8,7 +8,8 @@ const fs = new MemoryFileSystem();
 const compiler = webpack(config);
 compiler.outputFileSystem = fs;
 
-test('generates a favicon and injects it into the HTML', done =>
+test('generates a favicon and injects it into the HTML', done => {
+  jest.setTimeout(10000);
   compiler.run((err, stats) => {
     if (err) {
       done.fail();
@@ -25,4 +26,5 @@ test('generates a favicon and injects it into the HTML', done =>
     expect(link.href).toEqual('favicon.ico');
 
     done();
-  }));
+  });
+});
