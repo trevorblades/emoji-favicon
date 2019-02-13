@@ -1,4 +1,4 @@
-const EmojiFaviconPlugin = require('./plugin');
+const EmojiFaviconPlugin = require('./packages/emoji-favicon-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 
 module.exports = {
