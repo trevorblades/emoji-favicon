@@ -14,13 +14,13 @@ async function generatePngs(options) {
 
   const sizes = options.sizes || [16, 32, 48];
   if (options.useSystem) {
-    return await render(emoji, sizes);
+    return render(emoji, sizes);
   }
 
   const unicode = emojiUnicode(emoji);
   const path = require.resolve(`twemoji/2/svg/${unicode}.svg`);
   const svg = await fs.readFile(path);
-  return await Promise.all(
+  return Promise.all(
     sizes.map(size =>
       svg2png(svg, {
         width: size,

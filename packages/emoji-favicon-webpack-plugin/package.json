@@ -1,0 +1,27 @@
+{
+  "name": "emoji-favicon-webpack-plugin",
+  "version": "1.1.4",
+  "description": "Let webpack generate an emoji favicon for you",
+  "author": "Trevor Blades <tdblades@gmail.com>",
+  "repository": "trevorblades/emoji-favicon-webpack-plugin",
+  "license": "MIT",
+  "keywords": [
+    "emoji",
+    "favicon",
+    "webpack",
+    "plugin",
+    "webapp",
+    "favicons",
+    "html"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "emoji-name-map": "^1.2.7",
+    "emoji-unicode": "^1.0.9",
+    "favicon-emoji": "^2.3.0",
+    "pn": "^1.1.0",
+    "svg2png": "^4.1.1",
+    "to-ico": "^1.1.5",
+    "twemoji": "^11.2.0"
+  }
+}
