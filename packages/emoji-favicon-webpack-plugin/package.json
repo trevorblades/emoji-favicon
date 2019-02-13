@@ -5,6 +5,7 @@
   "author": "Trevor Blades <tdblades@gmail.com>",
   "repository": "trevorblades/emoji-favicon-webpack-plugin",
   "license": "MIT",
+  "main": "index.js",
   "keywords": [
     "emoji",
     "favicon",
@@ -14,7 +15,6 @@
     "favicons",
     "html"
   ],
-  "main": "index.js",
   "dependencies": {
     "emoji-name-map": "^1.2.7",
     "emoji-unicode": "^1.0.9",

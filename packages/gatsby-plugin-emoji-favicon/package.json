@@ -2,10 +2,10 @@
   "name": "gatsby-plugin-emoji-favicon",
   "version": "0.0.4",
   "description": "Gatsby plugin to generate an emoji favicon",
-  "main": "index.js",
   "author": "Trevor Blades <tdblades@gmail.com>",
-  "repository": "trevorblades/gatsby-plugin-emoji-favicon",
+  "repository": "trevorblades/emoji-favicon-webpack-plugin",
   "license": "MIT",
+  "main": "index.js",
   "keywords": [
     "gatsby",
     "gatsby-plugin",

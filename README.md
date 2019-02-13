@@ -74,9 +74,13 @@ addons:
   chrome: stable
 ```
 
+## Usage with Gatsby
+
+To generate an emoji favicon with [Gatsby](https://gatsbyjs.org), use the [Gatsby plugin](https://github.com/trevorblades/emoji-favicon-webpack-plugin/tree/master/packages/gatsby-plugin-emoji-favicon).
+
 ## Examples
 
-[MDX Deck](./examples/mdx-deck)
+- [MDX Deck](./examples/mdx-deck)
 
 ## License
 
