@@ -13,4 +13,26 @@ import {Head} from 'mdx-deck';
 
 ---
 
-Check out [the docs](https://github.com/trevorblades/emoji-favicon-webpack-plugin/tree/master/examples/mdx-deck) for an example!
+```js
+// webpack.config.js
+const EmojiFaviconPlugin = require('emoji-favicon-webpack-plugin');
+
+module.exports = {
+  plugins: [new EmojiFaviconPlugin('🚀')]
+};
+```
+
+---
+
+```jsx
+// deck.mdx
+import {Head} from 'mdx-deck';
+
+<Head>
+  <link rel="shortcut icon" href="favicon.ico" />
+</Head>
+```
+
+---
+
+Check out [the docs](https://github.com/trevorblades/emoji-favicon/tree/master/examples/mdx-deck) for more information!
