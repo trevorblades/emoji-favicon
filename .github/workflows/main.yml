@@ -20,5 +20,5 @@ jobs:
     - name: npm install and test
       run: |
         npm install
-        lerna bootstrap
+        npx lerna bootstrap
         npm test
