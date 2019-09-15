@@ -1,6 +1,6 @@
 # I 🦄 emoji favicons
 
-[![Build Status](https://travis-ci.com/trevorblades/emoji-favicon-webpack-plugin.svg?branch=master)](https://travis-ci.com/trevorblades/emoji-favicon-webpack-plugin)
+[![Build Status](https://github.com/trevorblades/emoji-favicon/workflows/Node%20CI/badge.svg)](https://github.com/trevorblades/emoji-favicon/actions)
 
 Are you building a web project and don't have a good idea for a favicon? Use an emoji instead! The packages in this repository generate and inject an emoji favicon into your app or site. Check out the readme in each repo for more information.
 
