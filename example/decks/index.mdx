@@ -7,11 +7,17 @@
 ---
 
 ```js
-// webpack.config.js
-const EmojiFaviconPlugin = require('emoji-favicon-webpack-plugin');
-
+// gatsby-config.js
 module.exports = {
-  plugins: [new EmojiFaviconPlugin('🚀')]
+  plugins: [
+    'gatsby-theme-mdx-deck',
+    {
+      resolve: 'gatsby-plugin-emoji-favicon',
+      options: {
+        emoji: '🛶'
+      }
+    }
+  ]
 };
 ```
 
