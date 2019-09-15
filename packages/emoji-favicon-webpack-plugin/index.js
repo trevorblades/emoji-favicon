@@ -3,16 +3,17 @@ const toIco = require('to-ico');
 const emojiUnicode = require('emoji-unicode');
 const emojiNameMap = require('emoji-name-map');
 const fs = require('pn/fs');
-const svg2png = require('svg2png');
+const svgToImg = require('svg-to-img');
 
 const isShortcode = /^:?[a-z0-9_]+:?$/;
+
 async function generatePngs(options) {
   let emoji = typeof options === 'string' ? options : options.emoji;
   if (isShortcode.test(emoji)) {
     emoji = emojiNameMap.get(emoji);
   }
 
-  const sizes = options.sizes || [16, 32, 48];
+  const sizes = options.sizes || [16, 32];
   if (options.useSystem) {
     return render(emoji, sizes);
   }
@@ -22,7 +23,7 @@ async function generatePngs(options) {
   const svg = await fs.readFile(path);
   return Promise.all(
     sizes.map(size =>
-      svg2png(svg, {
+      svgToImg.from(svg).toPng({
         width: size,
         height: size
       })
@@ -41,6 +42,7 @@ class EmojiFaviconPlugin {
       async (compilation, callback) => {
         const pngs = await generatePngs(this.options);
         const ico = await toIco(pngs);
+
         compilation.assets['favicon.ico'] = {
           source: () => ico,
           size: () => ico.length

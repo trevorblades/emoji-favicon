@@ -5,6 +5,9 @@
     "pretest": "eslint packages test.js webpack.config.js",
     "test": "jest"
   },
+  "eslintConfig": {
+    "extends": "@trevorblades"
+  },
   "devDependencies": {
     "@trevorblades/eslint-config": "^6.21.0",
     "eslint": "^5.13.0",

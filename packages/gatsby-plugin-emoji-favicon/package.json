@@ -12,9 +12,6 @@
     "emoji",
     "favicon"
   ],
-  "peerDependencies": {
-    "gatsby": ">=2"
-  },
   "dependencies": {
     "emoji-favicon-webpack-plugin": "^1.2.0"
   }

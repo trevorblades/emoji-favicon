@@ -24,10 +24,11 @@ module.exports = {
 };
 ```
 
-If you're using [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin), the HTML tags necessary to include your favicon will automatically be added to the `<head>` of your document.
+If you're using [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin), the HTML tags necessary to include your favicon will automatically be appended to the `<head>` of your document.
 
 ```html
-  ...
+<head>
+  <!-- other tags -->
   <link rel="shortcut icon" href="favicon.ico">
 </head>
 ```
@@ -40,7 +41,7 @@ By default, we use [Twemoji](https://github.com/twitter/twemoji) for consistent 
 new EmojiFaviconPlugin({
   emoji: '🍣',
   useSystem: true,
-  sizes: [16] // default is [16, 32, 48]
+  sizes: [16] // default is [16, 32]
 })
 ```
 
@@ -78,4 +79,4 @@ To generate an emoji favicon with [Gatsby](https://gatsbyjs.org), use the [Gatsb
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](../../LICENSE)

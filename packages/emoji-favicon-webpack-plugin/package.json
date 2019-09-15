@@ -20,7 +20,7 @@
     "emoji-unicode": "^1.0.9",
     "favicon-emoji": "^2.3.0",
     "pn": "^1.1.0",
-    "svg2png": "^4.1.1",
+    "svg-to-img": "^2.0.9",
     "to-ico": "^1.1.5",
     "twemoji": "^11.2.0"
   }
