@@ -33,7 +33,7 @@ If you're using [html-webpack-plugin](https://github.com/jantimon/html-webpack-p
 </head>
 ```
 
-### Options
+## Options
 
 By default, we use [Twemoji](https://github.com/twitter/twemoji) for consistent results across all operating systems. If you would prefer to use your system's emoji font instead, specify the `useSystem` option in the constructor.
 
