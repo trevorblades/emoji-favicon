@@ -1,8 +1,20 @@
-# Use an emoji favicon for your slide deck
+import future from '@mdx-deck/themes/future';
+import highlight from '@mdx-deck/themes/syntax-highlighter';
+
+export const themes = [
+  future,
+  highlight
+];
+
+# Slide decks with style
+
+Using an emoji favicon with Gatsby themes and MDX Deck
 
 ---
 
-# It's really easy
+1. Add `gatsby-theme-mdx-deck` to your Gatsby config
+2. Configure `gatsby-plugin-emoji-favicon` in your Gatsby config
+3. Create some slides in `decks/index.mdx`
 
 ---
 
@@ -23,4 +35,4 @@ module.exports = {
 
 ---
 
-Check out [the docs](https://github.com/trevorblades/emoji-favicon/tree/master/examples/mdx-deck) for more information!
+Read more and view the source code for this example [on GitHub](https://github.com/trevorblades/emoji-favicon/tree/master/example).

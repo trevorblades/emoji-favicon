@@ -41,7 +41,7 @@ By default, we use [Twemoji](https://github.com/twitter/twemoji) for consistent 
 new EmojiFaviconPlugin({
   emoji: '🍣',
   useSystem: true,
-  sizes: [16] // default is [16, 32]
+  sizes: [16] // default is [16, 32, 48]
 })
 ```
 

@@ -3,7 +3,7 @@ const toIco = require('to-ico');
 const emojiUnicode = require('emoji-unicode');
 const emojiNameMap = require('emoji-name-map');
 const fs = require('pn/fs');
-const svgToImg = require('svg-to-img');
+const {convert} = require('convert-svg-to-png');
 
 const isShortcode = /^:?[a-z0-9_]+:?$/;
 
@@ -13,17 +13,19 @@ async function generatePngs(options) {
     emoji = emojiNameMap.get(emoji);
   }
 
-  const sizes = options.sizes || [16, 32];
+  const sizes = options.sizes || [16, 32, 48];
   if (options.useSystem) {
     return render(emoji, sizes);
   }
 
   const unicode = emojiUnicode(emoji);
-  const path = require.resolve(`twemoji/2/svg/${unicode}.svg`);
-  const svg = await fs.readFile(path);
+  const svg = await fs.readFile(
+    require.resolve(`twemoji/2/svg/${unicode}.svg`)
+  );
+
   return Promise.all(
     sizes.map(size =>
-      svgToImg.from(svg).toPng({
+      convert(svg, {
         width: size,
         height: size
       })
