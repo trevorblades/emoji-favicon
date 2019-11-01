@@ -13,5 +13,6 @@
     "eslint": "^6.4.0",
     "jest": "^24.1.0",
     "lerna": "^3.11.1"
-  }
+  },
+  "testEnvironment": "node"
 }
