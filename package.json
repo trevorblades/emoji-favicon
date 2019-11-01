@@ -12,7 +12,7 @@
     "@trevorblades/eslint-config": "^7.0.1",
     "eslint": "^6.4.0",
     "jest": "^24.1.0",
-    "lerna": "^3.11.1"
+    "lerna": "^3.18.3"
   },
   "testEnvironment": "node"
 }
