@@ -47,4 +47,4 @@ Now, create a slide deck in the `decks/` directory. This is the place that `gats
 # The end
 ```
 
-[Click here](https://emoji-favicon-mdx-deck.surge.sh) for a hosted version of this example.
+Follow [this link](https://emoji-favicon.trevorblades.com/) for a hosted version of this example.
