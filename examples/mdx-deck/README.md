@@ -5,7 +5,10 @@ This example will demonstrate how to add an emoji favicon to your next awesome s
 In an empty project directory, install `gatsby-plugin-emoji-favicon` and all of the other dependencies for this example.
 
 ```shell
-$ npm install gatsby gatsby-theme-mdx-deck gatsby-plugin-emoji-favicon react react-dom
+$ npm init -y # initialize empty package.json
+$ npm install gatsby gatsby-theme-mdx-deck # install mdx deck gatsby theme
+$ npm install react react-dom # install gatsby peer dependencies
+$ npm install gatsby-plugin-emoji-favicon # install emoji favicon plugin
 ```
 
 Configure your Gatsby config to generate an emoji of your choice, and add `gatsby-theme-mdx-deck`. The theme will be used to quickly create an interactive slide deck later.
