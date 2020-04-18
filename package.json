@@ -14,5 +14,10 @@
     "jest": "^24.1.0",
     "lerna": "^3.18.3"
   },
-  "testEnvironment": "node"
+  "testEnvironment": "node",
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./jest.setup.js"
+    ]
+  }
 }
