@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-emoji-favicon",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "Gatsby plugin to generate an emoji favicon",
   "author": "Trevor Blades <tdblades@gmail.com>",
   "repository": {
@@ -17,6 +17,6 @@
     "favicon"
   ],
   "dependencies": {
-    "emoji-favicon-webpack-plugin": "^1.4.2"
+    "emoji-favicon-webpack-plugin": "^1.5.0"
   }
 }
