@@ -8,11 +8,13 @@
   "eslintConfig": {
     "extends": "@trevorblades"
   },
-  "testEnvironment": "node",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "devDependencies": {
     "@trevorblades/eslint-config": "^7.0.1",
     "eslint": "^6.4.0",
-    "jest": "^24.1.0",
-    "lerna": "^3.18.3"
+    "jest": "^26.0.1",
+    "lerna": "^3.21.0"
   }
 }
