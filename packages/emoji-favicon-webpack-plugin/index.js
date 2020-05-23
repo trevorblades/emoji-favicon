@@ -18,7 +18,7 @@ async function generatePngs(options) {
     return render(emoji, sizes);
   }
 
-  const unicode = emojiUnicode(emoji);
+  const unicode = emojiUnicode(emoji).replace(/\s+/g, '-');
   const svg = await fs.readFile(
     require.resolve(`twemoji/2/svg/${unicode}.svg`)
   );
