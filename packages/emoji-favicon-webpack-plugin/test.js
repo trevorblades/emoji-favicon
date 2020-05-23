@@ -9,13 +9,14 @@ const fs = new MemoryFS();
 
 const compiler = webpack({
   entry: __dirname + '/entry.js',
-  plugins: [new EmojiFaviconPlugin('💊'), new HtmlPlugin()]
+  // the emoji supplied has multiple unicode characters
+  plugins: [new EmojiFaviconPlugin('👨‍💻'), new HtmlPlugin()]
 });
 
 compiler.outputFileSystem = fs;
 
 test('generates a favicon and injects it into the HTML', done => {
-  function handler(err, stats) {
+  compiler.run((err, stats) => {
     if (err || stats.hasErrors()) {
       done.fail();
       return;
@@ -31,7 +32,5 @@ test('generates a favicon and injects it into the HTML', done => {
     expect(link.href).toEqual('favicon.ico');
 
     done();
-  }
-
-  compiler.run(handler);
-});
+  });
+}, 10000);
